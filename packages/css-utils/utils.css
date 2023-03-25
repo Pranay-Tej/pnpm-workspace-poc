@@ -1,0 +1,11 @@
+.sn-flex {
+  display: flex;
+}
+
+.sn-justify-center {
+  justify-items: center;
+}
+
+.sn-items-center {
+  align-items: center;
+}

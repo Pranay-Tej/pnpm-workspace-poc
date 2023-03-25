@@ -1,0 +1,17 @@
+{
+  "name": "pnpm-workspace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "client": "pnpm --filter client",
+    "client:dev": "pnpm --filter client dev",
+    "mui-lib": "pnpm --filter mui-lib",
+    "mui-lib:build": "pnpm --filter mui-lib build",
+    "mui-storybook": "NODE_OPTIONS=--openssl-legacy-provider pnpm --filter mui-lib run storybook"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

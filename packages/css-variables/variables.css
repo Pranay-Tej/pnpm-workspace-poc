@@ -1,0 +1,23 @@
+:root {
+  --blue500: #006ce6;
+  --blue25: #e5effb;
+  --primaryHover: #0061cf;
+  --disabledButtonColor: #bfd7f2;
+  --whiteColor: #ffffff;
+
+  --primaryBgLight: #ffffff;
+  --primaryBgDark: #1e2124;
+
+  /* default */
+  --primaryColor: var(--blue500);
+  --secondaryColor: var(--blue25);
+  --primaryBg: var(--primaryBgLight);
+}
+
+html.themeTwo {
+  --primaryColor: #242f40;
+  --secondaryColor: #cecece;
+  --primaryHover: #091c38;
+  --disabledButtonColor: #898989;
+  --primaryBg: var(--primaryBgDark);
+}
