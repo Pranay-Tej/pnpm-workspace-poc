@@ -3,9 +3,13 @@
 }
 
 .sn-justify-center {
-  justify-items: center;
+  justify-content: center;
 }
 
 .sn-items-center {
   align-items: center;
+}
+
+.sn-gap-5 {
+  gap: 5px;
 }

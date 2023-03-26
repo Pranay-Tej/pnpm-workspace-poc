@@ -11,19 +11,22 @@
   - An article worth considering - from emotion maintainer, about CSS in JS: [Why We're Breaking Up with CSS-in-JS](https://dev.to/srmagura/why-were-breaking-up-wiht-css-in-js-4g9b)
   - SCSS with css-modules can be used for scoped styles. CSS nesting is now native, browser support coming soon - [status](https://caniuse.com/css-nesting)
   - TODO: libraries like `tsup` to enable treeshaking (or configure existing vite)
-- Storybook for mui-lib
+- `Storybook` for mui-lib
   - TODO: theme switching with plugins
 - Reusable SvgIcons using mui's `SvgIcon` along with `stroke`, `strokeWidth` and other props to avoid overriding with css
+  - Can also take css variables as props
+- `ReduxToolkit` + `Redux Saga` for state management + async calls
 - common `css-utils` classes like `sn-flex`, `sn-items-center`, `sn-justify-center` shared as a package
   - can be replaced with tailwindcss with custom (ex: `sn-`) prefix
     - PROS
       - tailwind uses `postcss` to automatically add browser prefixes
-      - faster development
+      - faster development + ide autocomplete
       - extensive configuration (can also use `css-variables` from shared package)
       - automatic class sorting with official `prettier-plugin-tailwindcss`
     - CONS
       - classnames in template (tailwind can be used for utils, and normal css for layouts)
     - tailwind has crossed bootstrap in npm downloads recently - [npm trends](https://npmtrends.com/bootstrap-vs-tailwindcss). Not an easy feat considering jquery (not even considering non npm usage with cdn) still beats angular and vue - [npm trends](https://npmtrends.com/@angular/core-vs-jquery)
+- TODO: configure tsconfig and vite to allow imports as `@/store`, `@/page` etc.
 
 ---
 
