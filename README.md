@@ -32,6 +32,7 @@
 
 ## Installation
 
+- Requirements `node v18.15.0`, `npm v9.5.0` - `nvm use` to automatically set the versions with npm
 - Install `pmpm` with `npm i -g pnpm`
 - Install dependencies with `pnpm i`
 - Optional: use `ni` to simplify running scripts
