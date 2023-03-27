@@ -16,6 +16,7 @@
 - Reusable SvgIcons using mui's `SvgIcon` along with `stroke`, `strokeWidth` and other props to avoid overriding with css
   - Can also take css variables as props
 - `ReduxToolkit` + `Redux Saga` for state management + async calls
+- `client` - `Hold Alt + Right Click` on any ui element then `Click` on the file name to open corresponding code in the IDE - [vite-plugin-react-click-to-component](https://github.com/ArnaudBarre/vite-plugin-react-click-to-component)
 - common `css-utils` classes like `sn-flex`, `sn-items-center`, `sn-justify-center` shared as a package
   - can be replaced with tailwindcss with custom (ex: `sn-`) prefix
     - PROS

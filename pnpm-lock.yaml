@@ -21,6 +21,7 @@ importers:
       redux-saga: ^1.2.3
       typescript: ^4.9.3
       vite: ^4.2.0
+      vite-plugin-react-click-to-component: ^2.0.0
     dependencies:
       '@reduxjs/toolkit': 1.9.3_k4ae6lp43ej6mezo3ztvx6pykq
       axios: 1.3.4
@@ -37,6 +38,7 @@ importers:
       '@vitejs/plugin-react-swc': 3.2.0_vite@4.2.1
       typescript: 4.9.5
       vite: 4.2.1
+      vite-plugin-react-click-to-component: 2.0.0_react@18.2.0+vite@4.2.1
 
   packages/css-utils:
     specifiers: {}
@@ -12530,6 +12532,16 @@ packages:
       - '@types/node'
       - rollup
       - supports-color
+    dev: true
+
+  /vite-plugin-react-click-to-component/2.0.0_react@18.2.0+vite@4.2.1:
+    resolution: {integrity: sha512-wjxtiBC6EhDnrp/4NctO7pf0GcjyFrDy04QwPNw7vWIM//2iSrJrR2EJx5lI8LyAxdAPbQpeUQklUd7jL//xOg==}
+    peerDependencies:
+      react: '>=16'
+      vite: ^2 || ^3 || ^4
+    dependencies:
+      react: 18.2.0
+      vite: 4.2.1
     dev: true
 
   /vite/4.2.1:
