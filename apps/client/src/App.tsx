@@ -1,8 +1,8 @@
 import { Provider } from "react-redux";
 import "./App.css";
+import { Products } from "@/pages/products";
+import { store } from "@/store/appStore";
 import { ButtonsDemo } from "./ComponentsDemo";
-import { Products } from "./pages/products";
-import { store } from "./store";
 
 function App() {
   return (

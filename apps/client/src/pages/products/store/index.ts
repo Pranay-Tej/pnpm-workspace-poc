@@ -1,6 +1,7 @@
 import { createAction, createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
 import { Product, ProductState } from "../models";
+import { PRODUCTS_REDUX_KEY } from "../constants";
 
 const initialState: ProductState = {
   selectedCategory: "",
@@ -11,7 +12,7 @@ const initialState: ProductState = {
 };
 
 export const productsSlice = createSlice({
-  name: "products",
+  name: PRODUCTS_REDUX_KEY,
   initialState,
   reducers: {
     setSelectedCategory: (state, action: PayloadAction<string>) => {
@@ -33,8 +34,12 @@ export const productsSlice = createSlice({
 });
 
 // saga actions
-export const fetchCategories = createAction("products/fetchCategories");
-export const fetchProducts = createAction("products/fetchProducts");
+export const fetchCategories = createAction(
+  `${PRODUCTS_REDUX_KEY}/fetchCategories`
+);
+export const fetchProducts = createAction(
+  `${PRODUCTS_REDUX_KEY}/fetchProducts`
+);
 
 export const productActions = productsSlice.actions;
 
