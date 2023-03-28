@@ -8,7 +8,7 @@
     "client": "pnpm --filter client",
     "client:dev": "pnpm --filter client dev",
     "mui-lib": "pnpm --filter mui-lib",
-    "mui-lib:build": "pnpm --filter mui-lib build",
+    "mui-lib:dev": "pnpm --filter mui-lib dev",
     "mui-storybook": "NODE_OPTIONS=--openssl-legacy-provider pnpm --filter mui-lib run storybook"
   },
   "keywords": [],

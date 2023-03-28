@@ -16,7 +16,7 @@
 - Reusable SvgIcons using mui's `SvgIcon` along with `stroke`, `strokeWidth` and other props to avoid overriding with css
   - Can also take css variables as props
 - `ReduxToolkit` + `Redux Saga` for state management + async calls
-- `client` - `Hold Alt + Right Click` on any ui element then `Click` on the file name to open corresponding code in the IDE - [vite-plugin-react-click-to-component](https://github.com/ArnaudBarre/vite-plugin-react-click-to-component)
+- Click in browser to open code in IDE (`client`) - `Hold Alt + Right Click` on any ui element, then `Click` on the file name to open corresponding code in the IDE - [vite-plugin-react-click-to-component](https://github.com/ArnaudBarre/vite-plugin-react-click-to-component)
 - common `css-utils` classes like `sn-flex`, `sn-items-center`, `sn-justify-center` shared as a package
   - can be replaced with tailwindcss with custom (ex: `sn-`) prefix
     - PROS
@@ -39,6 +39,6 @@
 - Optional: use `ni` to simplify running scripts
   - `pnpm i -g @antfu/ni`
   - `nr` to view and run available scripts in `package.json`
-- `pnpm mui-lib build` or `pnpm mui-lib:build` to build the ui library
+- `pnpm mui-lib dev` or `pnpm mui-lib:dev` to run the ui library
 - `pnpm mui-storybook` to run story book
 - `pnpm client dev` or `pnpm client:dev` to run react client app
