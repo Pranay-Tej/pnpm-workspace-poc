@@ -3,6 +3,7 @@ import "./App.css";
 import { Products } from "@/pages/products";
 import { store } from "@/store/appStore";
 import { ButtonsDemo } from "./ComponentsDemo";
+import { ProductsSignals } from "./pages/products-signals";
 
 function App() {
   return (
@@ -12,6 +13,10 @@ function App() {
       <hr />
 
       <Products />
+
+      <hr />
+
+      <ProductsSignals />
     </Provider>
   );
 }

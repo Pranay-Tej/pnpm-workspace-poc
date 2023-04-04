@@ -7,6 +7,7 @@ import { selectPage, selectSelectedCategory } from "./selectors";
 
 function* fetchCategoriesSaga() {
   try {
+    // cannot do axios.get<T>, explicit with AxiosResponse<T>
     const categoriesResponse: AxiosResponse<string[]> = yield axios.get(
       "https://dummyjson.com/products/categories"
     );
@@ -20,6 +21,7 @@ function* fetchProductsSaga() {
   try {
     let requestUrl = "https://dummyjson.com/products";
 
+    // no auto type infer with select()
     const selectedCategory: string = yield select(selectSelectedCategory);
     if (selectedCategory) {
       requestUrl += `/category/${selectedCategory}`;
@@ -39,8 +41,9 @@ function* fetchProductsSaga() {
 }
 
 function* handleProductsParamsChange() {
+  // batch updates into a single api call
   yield debounce(
-    150,
+    1,
     [productActions.setPage.type, productActions.setSelectedCategory.type],
     fetchProductsSaga
   );
