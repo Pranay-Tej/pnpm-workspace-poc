@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
     "preinstall": "npx only-allow pnpm",
     "client": "pnpm --filter client",
     "client:dev": "pnpm --filter client dev",
@@ -13,5 +15,8 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "turbo": "^1.8.8"
+  }
 }

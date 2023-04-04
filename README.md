@@ -1,6 +1,6 @@
 # pnpm workspace poc
 
-- pnpm monorepo to use as a base to test turborepo and nx in separate branches
+- pnpm monorepo to use as a base to test `turborepo` and `nx` in separate branches
 
 ## Includes
 
@@ -15,6 +15,7 @@
   - Can also take css variables as props
 - `ReduxToolkit` + `Redux Saga` for state management + async calls
 - `Preact Signals` state management POC
+- `turborepo` configuration
 - Click in browser to open code in IDE (`client`) - `Hold Alt + Right Click` on any ui element, then `Click` on the file name to open corresponding code in the IDE - [vite-plugin-react-click-to-component](https://github.com/ArnaudBarre/vite-plugin-react-click-to-component)
 - common `css-utils` classes like `sn-flex`, `sn-items-center`, `sn-justify-center` shared as a package
   - can be replaced with tailwindcss with custom (ex: `sn-`) prefix
@@ -44,14 +45,19 @@
 
 ---
 
-## Installation
+## Dev Setup
 
-- Requirements `node v18.15.0`, `npm v9.5.0` - `nvm use` to automatically set the versions with npm
-- Install `pmpm` with `npm i -g pnpm`
+- Requirements: `node v18.15.0`, `npm v9.5.0`
+- Run `nvm use` to automatically set the versions with nvm
+- Install `pnpm` with `npm i -g pnpm`
 - Install dependencies with `pnpm i`
 - Optional: use `ni` to simplify running scripts
   - `pnpm i -g @antfu/ni`
   - `nr` to view and run available scripts in `package.json`
-- `pnpm mui-lib dev` or `pnpm mui-lib:dev` to run the ui library
-- `pnpm mui-storybook` to run story book
-- `pnpm client dev` or `pnpm client:dev` to run react client app
+- TurboRepo
+  - `pnpm dev` to run with turborepo
+  - `pnpm build` to build with turborepo
+- Manual (pnpm workspaces)
+  - `pnpm mui-lib dev` or `pnpm mui-lib:dev` to run the ui library
+  - `pnpm mui-storybook` to run story book
+  - `pnpm client dev` or `pnpm client:dev` to run react client app
