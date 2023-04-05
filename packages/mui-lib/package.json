@@ -1,9 +1,9 @@
 {
-  "name": "mui-lib",
+  "name": "@sb/mui-lib",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "main": "./index.js",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "exports": {
     ".": "./dist"
@@ -20,7 +20,7 @@
     "@emotion/styled": "^11.10.6",
     "@fontsource/roboto": "^4.5.8",
     "@mui/material": "^5.11.14",
-    "css-variables": "workspace:*",
+    "@sb/css-variables": "workspace:*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

@@ -1,4 +1,4 @@
-import { Button } from "mui-lib";
+import { Button } from "@sb/mui-lib";
 import { useMemo } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { PER_PAGE } from "./constants";

@@ -11,10 +11,10 @@
   "dependencies": {
     "@preact/signals-react": "^1.2.2",
     "@reduxjs/toolkit": "^1.9.3",
+    "@sb/css-utils": "workspace:*",
+    "@sb/css-variables": "workspace:*",
+    "@sb/mui-lib": "workspace:*",
     "axios": "^1.3.4",
-    "css-utils": "workspace:*",
-    "css-variables": "workspace:*",
-    "mui-lib": "workspace:*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.5",

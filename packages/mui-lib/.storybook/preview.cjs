@@ -1,4 +1,4 @@
-import "css-variables/variables.css";
+import "@sb/css-variables/variables.css";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -8,4 +8,4 @@ export const parameters = {
       date: /Date$/,
     },
   },
-}
+};

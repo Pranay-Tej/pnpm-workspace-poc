@@ -1,4 +1,4 @@
-import { Button } from "mui-lib";
+import { Button } from "@sb/mui-lib";
 import { lastPage, page } from "./store";
 
 export const Pagination = () => {
