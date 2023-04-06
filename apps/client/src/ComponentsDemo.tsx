@@ -1,4 +1,5 @@
-import { Button, SlidersIcon } from "@sb/mui-lib";
+import { SlidersIcon } from "@sb/mui-lib";
+import { Button } from "@sb/mui-lib/elements";
 
 export const ButtonsDemo = () => {
   return (

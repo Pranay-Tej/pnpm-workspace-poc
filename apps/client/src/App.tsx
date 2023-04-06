@@ -12,11 +12,11 @@ function App() {
 
       <hr />
 
-      <Products />
+      {/* <Products /> */}
 
       <hr />
 
-      <ProductsSignals />
+      {/* <ProductsSignals /> */}
     </Provider>
   );
 }

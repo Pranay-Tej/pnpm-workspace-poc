@@ -6,7 +6,8 @@ export default defineConfig({
   plugins: [react(), dts()],
   build: {
     lib: {
-      entry: "src/index.ts",
+      // https://dev.to/nicolaserny/create-a-react-component-library-with-vite-and-typescript-1ih9
+      entry: ["src/index.ts", "src/elements/index.ts"],
       name: "mui-lib",
       fileName: "index",
       formats: ["es"],

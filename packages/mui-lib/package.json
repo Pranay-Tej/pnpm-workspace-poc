@@ -6,7 +6,8 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "exports": {
-    ".": "./dist"
+    ".": "./dist",
+    "./elements": "./dist/index2.js"
   },
   "scripts": {
     "dev": "tsc && vite build --watch",
